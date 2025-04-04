@@ -19,7 +19,7 @@ export function Hero() {
               Hi, I'm <span className="text-primary">Joyal Aliyas</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
-              Computer Science Student, Graphic Designer, Developer
+              Blending Creativity with Technology
             </h2>
             <p className="text-lg mb-8 max-w-lg">
               Crafting engaging experiences through code and design, blending technical knowledge with creative problem-solving.

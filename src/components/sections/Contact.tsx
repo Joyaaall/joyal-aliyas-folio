@@ -1,13 +1,14 @@
+
 import { AnimatedSection } from "../AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+
 export function Contact() {
-  const {
-    toast
-  } = useToast();
+  const { toast } = useToast();
+  
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // In a real implementation, you would send the form data to an email service
@@ -21,7 +22,9 @@ export function Contact() {
     // Reset form
     e.currentTarget.reset();
   };
-  return <AnimatedSection id="contact" animation="slide-up">
+  
+  return (
+    <AnimatedSection id="contact" animation="slide-up">
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-6">
           Get in <span className="text-primary">Touch</span>
@@ -39,8 +42,8 @@ export function Contact() {
                 <Mail className="h-6 w-6 text-primary mr-4 mt-1" />
                 <div>
                   <h4 className="font-medium mb-1">Email</h4>
-                  <a href="mailto:joyaaalltrash@gmail.com" className="text-muted-foreground hover:text-foreground">
-                    joyaaalltrash@gmail.com
+                  <a href="mailto:joyalaliyas123@gmail.com" className="text-muted-foreground hover:text-foreground">
+                    joyalaliyas123@gmail.com
                   </a>
                 </div>
               </div>
@@ -64,13 +67,13 @@ export function Contact() {
             
             <h3 className="text-2xl font-semibold mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="#" className="p-3 border rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
+              <a href="https://github.com/Joyaaall" target="_blank" rel="noopener noreferrer" className="p-3 border rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="p-3 border rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
+              <a href="https://www.linkedin.com/in/joyal-aliyas-30408b328/" target="_blank" rel="noopener noreferrer" className="p-3 border rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="p-3 border rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="p-3 border rounded-full hover:bg-primary hover:text-primary-foreground transition-colors duration-300">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -106,5 +109,6 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </AnimatedSection>;
+    </AnimatedSection>
+  );
 }

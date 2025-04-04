@@ -24,30 +24,34 @@ export function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: "OnTrack: Smart Travel Companion",
-      description: "A travel companion app helping users track expenses, schedule activities, and discover local attractions.",
+      title: "First 2D Game in Unity",
+      description: "My journey into game development, exploring Unity's 2D capabilities and learning about game mechanics and design principles.",
       image: placeholderImage,
       category: "development",
-      tools: ["React Native", "Firebase", "Google Maps API"],
+      tools: ["Unity", "C#", "Game Design"],
       links: {
-        github: "#",
+        github: "https://github.com/Joyaaall",
       },
     },
     {
       id: 2,
-      title: "IoT in Agriculture",
-      description: "A research presentation on implementing IoT solutions in agricultural settings to improve efficiency and sustainability.",
+      title: "Device Spoofing & Cloud Storage",
+      description: "An ethical innovation exploration into cybersecurity and cloud systems, focusing on secure data management and access.",
       image: placeholderImage,
-      category: "academic",
-      tools: ["Research", "Data Analysis", "Presentation"],
+      category: "development",
+      tools: ["Python", "Cloud Services", "Security"],
     },
     {
       id: 3,
-      title: "Superconductors Physics Study",
-      description: "An academic assignment exploring the properties and applications of superconductors in modern technology.",
+      title: "OnTrack",
+      description: "An offline bus alert system designed to improve commuter experience with reliable notifications and route tracking.",
       image: placeholderImage,
-      category: "academic",
-      tools: ["Research", "Analysis", "Technical Writing"],
+      category: "development",
+      tools: ["Mobile Development", "UX Design", "Location Services"],
+      links: {
+        live: "#",
+        github: "https://github.com/Joyaaall",
+      },
     },
     {
       id: 4,
@@ -74,7 +78,7 @@ export function Projects() {
       tools: ["React", "Tailwind CSS", "Framer Motion"],
       links: {
         live: "#",
-        github: "#",
+        github: "https://github.com/Joyaaall",
       },
     },
   ];

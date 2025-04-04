@@ -8,26 +8,26 @@ const achievements = [
   {
     id: 1,
     image: placeholderImage,
-    title: "Design Competition Winner",
-    description: "First place in the national student design competition for innovative UI/UX solutions.",
+    title: "APJ KTU Startup Cell Idea Competition",
+    description: "Participated in the prestigious startup idea competition by APJ KTU, presenting innovative technical solutions.",
   },
   {
     id: 2,
     image: placeholderImage,
-    title: "Hackathon Finalist",
-    description: "Reached the finals of the 48-hour coding challenge with a sustainable technology solution.",
+    title: "School Science Exhibition",
+    description: "First prize for an interactive demonstration of programming concepts applied to real-world problems.",
   },
   {
     id: 3,
     image: placeholderImage,
-    title: "Academic Excellence Award",
-    description: "Recognized for outstanding academic achievement in computer science studies.",
+    title: "Python Development Recognition",
+    description: "Recognized for creating helpful Python tools for student productivity and learning.",
   },
   {
     id: 4,
     image: placeholderImage,
-    title: "Photography Exhibition",
-    description: "Featured work in the university's annual student art exhibition.",
+    title: "Design Challenge",
+    description: "Honorable mention for creative graphic design work in a regional student competition.",
   },
 ];
 

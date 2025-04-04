@@ -17,8 +17,8 @@ export function About() {
     "HTML",
     "CSS",
     "JavaScript",
-    "TypeScript",
     "Python",
+    "C#",
     "Java"
   ];
 
