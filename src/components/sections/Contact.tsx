@@ -1,30 +1,27 @@
-
 import { AnimatedSection } from "../AnimatedSection";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Github, Linkedin, Instagram } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-
 export function Contact() {
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // In a real implementation, you would send the form data to an email service
-    
+
     // Show success toast
     toast({
       title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      description: "Thank you for reaching out. I'll get back to you soon."
     });
-    
+
     // Reset form
     e.currentTarget.reset();
   };
-
-  return (
-    <AnimatedSection id="contact" animation="slide-up">
+  return <AnimatedSection id="contact" animation="slide-up">
       <div className="container mx-auto px-4">
         <h2 className="section-title text-center mb-6">
           Get in <span className="text-primary">Touch</span>
@@ -52,7 +49,7 @@ export function Contact() {
                 <Phone className="h-6 w-6 text-primary mr-4 mt-1" />
                 <div>
                   <h4 className="font-medium mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+XX XXX XXX XXXX</p>
+                  <p className="text-muted-foreground">+91 7306420690</p>
                 </div>
               </div>
               
@@ -99,13 +96,7 @@ export function Contact() {
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
                 </label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  required
-                  className="w-full"
-                />
+                <Textarea id="message" name="message" rows={5} required className="w-full" />
               </div>
               
               <Button type="submit" className="w-full">
@@ -115,6 +106,5 @@ export function Contact() {
           </div>
         </div>
       </div>
-    </AnimatedSection>
-  );
+    </AnimatedSection>;
 }
