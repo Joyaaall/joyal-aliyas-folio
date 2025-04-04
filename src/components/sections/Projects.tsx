@@ -1,9 +1,11 @@
-
 import { AnimatedSection } from "../AnimatedSection";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
-import placeholderImage from "/placeholder.svg";
+// Replace with your own project images
+// import project1Image from "/your-project1-image.jpg";
+// import project2Image from "/your-project2-image.jpg";
+// etc.
 
 type Project = {
   id: number;
@@ -26,7 +28,8 @@ export function Projects() {
       id: 1,
       title: "First 2D Game in Unity",
       description: "My journey into game development, exploring Unity's 2D capabilities and learning about game mechanics and design principles.",
-      image: placeholderImage,
+      // Replace with your project image path
+      image: "/your-project1-image.jpg",
       category: "development",
       tools: ["Unity", "C#", "Game Design"],
       links: {

@@ -2,12 +2,16 @@
 import { AnimatedSection } from "../AnimatedSection";
 import { useRef } from "react";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import placeholderImage from "/placeholder.svg";
+// Replace these with your achievement images
+// import achievement1Image from "/your-achievement1-image.jpg";
+// import achievement2Image from "/your-achievement2-image.jpg";
+// etc.
 
 const achievements = [
   {
     id: 1,
-    image: placeholderImage,
+    // Replace with your achievement image path
+    image: "/your-achievement1-image.jpg",
     title: "APJ KTU Startup Cell Idea Competition",
     description: "Participated in the prestigious startup idea competition by APJ KTU, presenting innovative technical solutions.",
   },

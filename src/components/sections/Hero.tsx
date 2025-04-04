@@ -1,7 +1,12 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import profilePlaceholder from "/placeholder.svg";
+// Replace the placeholder with your own image
+// You can either:
+// 1. Upload an image file to the public folder and import it like this:
+// import profileImage from "/your-profile-picture.jpg";
+// OR
+// 2. Use an external URL directly in the img src
 
 export function Hero() {
   return (
@@ -37,7 +42,8 @@ export function Hero() {
           <div className="md:w-1/2 flex justify-center animate-fade-in" style={{ animationDelay: "400ms" }}>
             <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-secondary animate-float">
               <img
-                src={profilePlaceholder}
+                // Replace this with your own image path
+                src="/your-profile-picture.jpg" 
                 alt="Joyal Aliyas"
                 className="w-full h-full object-cover"
               />
