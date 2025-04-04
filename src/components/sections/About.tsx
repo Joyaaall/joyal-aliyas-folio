@@ -47,14 +47,14 @@ export function About() {
               learning new music, or planning my next travel adventure.
             </p>
             
-            <Button variant="outline" className="mt-4 rounded-full">
+            <Button variant="outline" className="mt-4 rounded-full border-secondary text-secondary hover:bg-secondary/10 hover:text-secondary">
               <Download className="mr-2 h-4 w-4" /> Download Resume
             </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card-hover p-8 rounded-lg border bg-card">
-              <h3 className="text-xl font-semibold mb-4">Design Tools</h3>
+            <div className="card-hover p-8 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-4 text-primary">Design Tools</h3>
               <ul className="space-y-2">
                 {tools.map((tool, index) => (
                   <li key={index} className="flex items-center">
@@ -65,12 +65,12 @@ export function About() {
               </ul>
             </div>
             
-            <div className="card-hover p-8 rounded-lg border bg-card">
-              <h3 className="text-xl font-semibold mb-4">Languages</h3>
+            <div className="card-hover p-8 rounded-lg border bg-card shadow-sm hover:shadow-md hover:border-secondary/20 transition-all duration-300">
+              <h3 className="text-xl font-semibold mb-4 text-secondary">Languages</h3>
               <ul className="space-y-2">
                 {languages.map((language, index) => (
                   <li key={index} className="flex items-center">
-                    <div className="w-2 h-2 rounded-full bg-primary mr-3"></div>
+                    <div className="w-2 h-2 rounded-full bg-secondary mr-3"></div>
                     <span>{language}</span>
                   </li>
                 ))}

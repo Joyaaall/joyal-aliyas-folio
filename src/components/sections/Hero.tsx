@@ -9,8 +9,8 @@ export function Hero() {
       id="home"
       className="min-h-screen relative flex items-center justify-center py-20 overflow-hidden"
     >
-      {/* Background pattern */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(100,100,100,0.08)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+      {/* Background pattern with new styling */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,0,127,0.05)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
       
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
@@ -28,7 +28,7 @@ export function Hero() {
               <Button asChild className="rounded-full">
                 <a href="#projects">View My Work</a>
               </Button>
-              <Button variant="outline" asChild className="rounded-full">
+              <Button variant="outline" asChild className="rounded-full border-secondary text-secondary hover:bg-secondary/10 hover:text-secondary">
                 <a href="#contact">Get In Touch</a>
               </Button>
             </div>
