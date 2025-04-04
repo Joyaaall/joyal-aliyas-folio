@@ -10,7 +10,7 @@ export function Hero() {
       className="min-h-screen relative flex items-center justify-center py-20 overflow-hidden"
     >
       {/* Background pattern with new styling */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(255,0,127,0.05)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_center,rgba(135,79,65,0.08)_1px,transparent_1px)] bg-[size:20px_20px]"></div>
       
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
